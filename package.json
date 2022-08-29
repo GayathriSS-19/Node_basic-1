@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "express": "^4.18.1",
+    "mongodb": "^4.9.0",
+    "mongoose": "^6.5.3"
+  },
+  "name": "node_basic-1",
+  "description": "Using basic Node,Express and mongodb \r providing a basic backend sight to understand their work",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "start" :"nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GayathriSS-19/Node_basic-1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GayathriSS-19/Node_basic-1/issues"
+  },
+  "homepage": "https://github.com/GayathriSS-19/Node_basic-1#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
