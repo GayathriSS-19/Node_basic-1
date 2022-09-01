@@ -6,6 +6,7 @@ const Student1=require('../Models/student.js')
 router.get('/',async(req,res)=> {
     try{
         const b1=await Student1.find()
+        //const b1=await Student1.findById(req.params.id)
         res.json(b1)
     }
     catch(err){

@@ -9,8 +9,8 @@ con.on('open',function(){                      //on is an event handler
     console.log("Database connected")
 })
 app.use(express.json())
-
-const StuRouter1=require('./routes/student.js')
+  //these 2 lines include middleware(below)
+const StuRouter1=require('./routes/students.js')
 app.use('/student',StuRouter1)
 
 app.listen(9000,() =>                  //connecting server 
