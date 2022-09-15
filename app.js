@@ -10,8 +10,8 @@ con.on('open',function(){                      //on is an event handler
 })
 app.use(express.json())
   //these 2 lines include middleware(below)
-//const StuRouter1=require('./routes/students.js')
-//app.use('/student',StuRouter1)
+const StuRouter1=require('./routes/students.js')
+app.use('/student',StuRouter1)
 
 app.listen(9000,() =>                  //connecting server 
 {
