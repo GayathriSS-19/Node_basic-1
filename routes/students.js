@@ -13,6 +13,17 @@ router.get('/',async(req,res)=> {
     }
 })
 
+router.get('/:id',async(req,res)=>{
+    try{
+       const b4=await Student1.findById(req.params.id) 
+       req.json(b4)
+    }
+
+    catch(err){
+        res.send("Error:"+err)
+    }
+})
+
 router.post('/',async(req,res)=>
    {
     const b2=new Student1({
@@ -29,4 +40,6 @@ router.post('/',async(req,res)=>
     }
    })  
 
+
 module.exports=router
+  
