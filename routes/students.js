@@ -40,6 +40,19 @@ router.post('/',async(req,res)=>
     }
    })  
 
+router.patch(':/id',async(req,res)=>{
+    try{
+        const b5=await Student1.findById(req.params.id)
+        b5.Name=req.body.Name
+        const b6= await b5.save()
+        req.json(b5)
+    }
+
+    catch(err){
+        res.send("Error")
+    }
+})
+
 
 module.exports=router
   
